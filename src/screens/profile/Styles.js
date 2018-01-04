@@ -10,6 +10,9 @@ export default StyleSheet.create({
         flexDirection: 'column',
         backgroundColor: '#f3f3f3',
     },
+    profileContainer:{
+        flex:1
+    },
     dock:{
         marginTop:10
     }

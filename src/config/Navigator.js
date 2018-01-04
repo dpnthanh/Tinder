@@ -8,8 +8,22 @@ import SettingHeader from '../components/header/settings';
 import CreateGroup from '../screens/createGroup/Index';
 import Chat from '../screens/chat/Index'
 import ChatHeader from '../components/header/chat'
+import TestScreen from '../screens/test/animate'
 export default RootScreen = StackNavigator({
-    
+    // TestScreen: {
+    //     screen: TestScreen,
+    //     navigationOptions:{
+    //         header: <ProfileHeader/>
+    //     }
+    // },
+    Profile: {
+        screen : ProfileScreen,
+        navigationOptions:{
+            header: <ProfileHeader/>
+        }
+
+    },
+
     Chat:{
         screen: Chat,
         navigationOptions:{
@@ -29,13 +43,7 @@ export default RootScreen = StackNavigator({
                 headerTitle: <SettingHeader/>,
             },
     },
-    Profile: {
-        screen : ProfileScreen,
-        navigationOptions:{
-            header: <ProfileHeader/>
-        }
-
-    },
+    
     
     
 
